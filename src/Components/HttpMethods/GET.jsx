@@ -8,13 +8,13 @@ export const GET = () => {
             <div className='getEmptyArea'>
                 {urlIn?urlIn:'Enter url in the input box'}
             </div>
-            <hr />
+            {/* <hr /> */}
             <div className='getInput'>
                 <span>URL</span>
                 <input type="text" onChange={(e)=>setUrlIn(e.target.value)} className='getRealIntput' placeholder='Enter url'/>
                 <button className='getbtn'>Send</button>
             </div>
-            <hr />
+            {/* <hr /> */}
             <div className='getResponse'>
 
             </div>
