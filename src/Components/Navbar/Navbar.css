@@ -6,9 +6,10 @@ img{
 *{
   color: #6C4A4A;
 }
-.container{
-  width: 98%;
-  height: 40px;
+.navContainer{
+    width: 98%;
+    margin-right: 1%;
+    height: 40px;
     border: 1px solid whitesmoke;
     margin: 1%;
     /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
@@ -20,10 +21,10 @@ img{
     background:#EDEDED;
     
 }
-.container>div{
+.navContainer>div{
   /* border: 1px solid; */
   margin-right: 4%;
-  padding-top: 1%;
+  padding-top: 5px;
 }
 .containerChild{
   margin-left: 55%;
@@ -39,8 +40,8 @@ img{
 }
 .mainDiv{
     /* border: 1px solid; */
-    width: 50x;
-    height: 35px;
+    /* width: 50x;
+    height: 35px; */
     /* border-radius: 200px; */
     display: flex;
     flex-direction: row;
@@ -50,7 +51,7 @@ img{
     height: 40px;
     color: lightgray;
     font-weight: bold;
-    margin-top: 7%;
+    /* margin-top: 7%; */
     font-family: 'Lucida Sans';
     font-style: italic;
 }
