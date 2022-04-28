@@ -1,0 +1,48 @@
+.getContainer{
+    border: 1px solid grey;
+    margin: 0;
+    padding: 0;
+}
+.getEmptyArea{
+    height: 40px;
+    border: 1px solid lightgrey;
+    text-align: left;
+    padding-left: 10%;
+    padding-top: 1%;
+}
+.getInput{
+    height: 40px;
+    border: 1px solid lightgrey;
+}
+.getRealIntput{
+    height: 100%;
+    width: 50%;
+    border: 1px solid lightgray;
+    border-top: none;
+    border-bottom: none;
+    font-style: italic;
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 2%;
+}
+.getRealIntput:focus{
+    background-color: whitesmoke;
+}
+.getbtn{
+    height: 100%;
+    border: 1px solid whitesmoke;
+    color: white;
+    margin-left: 5%;
+    border-top: none;
+    border-bottom: none;
+    width: 20%;
+    background: #0d6efd;
+}
+span{
+    margin-right: 10%;
+}
+.getResponse{
+    border: 1px solid red;
+    min-height:360px;
+    overflow-y: scroll;
+}
