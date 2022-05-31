@@ -5,7 +5,7 @@ export const AllRoutes = () =>{
     return (
         <>
             <Routes>
-                <Route path="/tab" element={<TabMethods/>}/>
+                <Route path="/" element={<TabMethods/>}/>
             </Routes>
         
         </>
