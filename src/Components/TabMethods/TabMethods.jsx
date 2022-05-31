@@ -1,6 +1,7 @@
 import Tabs from 'react-bootstrap/Tabs'
 import Tab from 'react-bootstrap/Tab';
 import { GET } from '../HttpMethods/GET';
+import { POST } from '../HttpMethods/Post';
 
 
 export const TabMethods = () =>{
@@ -12,7 +13,7 @@ export const TabMethods = () =>{
                     <GET name={'get'}/>
                 </Tab>
                 <Tab eventKey="POST" title="POST">
-                    <h1>POST</h1>
+                    <POST name={'post'}/>
                 </Tab>
                 <Tab eventKey="PATCH" title="PATCH">
                     <h1>PATCH</h1>
