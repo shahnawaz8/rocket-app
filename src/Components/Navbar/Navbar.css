@@ -82,7 +82,7 @@ img{
     50% {transform: translate(10px,0px);}
   }
   @keyframes mymove4 {
-    100% {transform: translate(700px,0px);}
+    100% {transform: translate(100px,0px);}
   }
 
   .contentDiv{
@@ -93,7 +93,7 @@ img{
   }
 .rock{
   width: 40px;
-  animation: mymove4 10s infinite;
+  animation: mymove4 10s infinite alternate-reverse;
 
 }
 

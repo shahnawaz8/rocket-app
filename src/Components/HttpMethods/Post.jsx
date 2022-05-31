@@ -1,11 +1,14 @@
 import axios from 'axios';
 import { useState } from 'react'
 import { Link } from 'react-router-dom';
+import Tabs from 'react-bootstrap/Tabs'
+import Tab from 'react-bootstrap/Tab';
 import './GET.css' 
 import swal from 'sweetalert';
 export const POST = ({name}) => {
     const [urlIn,setUrlIn] = useState("");
     const [text,setText] = useState("");
+    const [token,setToken] = useState(false);
 
     const [tg,setTg] = useState(false);
     const handleEvent = () =>{
@@ -64,7 +67,7 @@ export const POST = ({name}) => {
         }
         
     }
-    // console.log(text);
+    console.log(token);
     return (
         <>
         <div className="getContainer">
@@ -76,6 +79,17 @@ export const POST = ({name}) => {
                 <input type="text" onChange={(e)=>setUrlIn(e.target.value)} className='getRealIntput' placeholder='Enter url'/>
                 <button className='getbtn' onClick={handleEvent}>Send</button>
             </div>
+            {name=='post'?
+                <div className='getInput'>
+                   <h1 onClick={()=>token?setToken(false):setToken(true)}>Autherisation</h1>
+
+                </div>:""
+
+            }
+            {token?<div>
+                <input type="text" placeholder='Enter token'/>
+            </div>:''}
+
             <textarea disabled={name=='delete'} placeholder='Enter data in json formate' onChange={(e)=>setText(e.target.value)}
              className='getResponse'></textarea>
                 
