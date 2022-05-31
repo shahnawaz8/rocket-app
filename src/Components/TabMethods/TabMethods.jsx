@@ -9,7 +9,7 @@ export const TabMethods = () =>{
             <Tabs defaultActiveKey="GET" transition={true} className="mb-3">
                 <Tab style={{'color':'red'}} eventKey="MEthods" title="Methods" disabled/>
                 <Tab eventKey="GET" title="GET">
-                    <GET />
+                    <GET name={'get'}/>
                 </Tab>
                 <Tab eventKey="POST" title="POST">
                     <h1>POST</h1>

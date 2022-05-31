@@ -45,8 +45,9 @@ span{
     margin-right: 10%;
 }
 .getResponse{
-    /* border: 1px solid red; */
-    min-height:330px;
+    border: 1px solid red;
+    max-height:430px;
+    min-height: 420px;
     overflow-y: scroll;
     background-color: whitesmoke;
 }

@@ -27,7 +27,7 @@ img{
   padding-top: 5px;
 }
 .containerChild{
-  margin-left: 55%;
+  margin-left: 20%;
 }
 .nv{
   color: #6C4A4A;
@@ -81,6 +81,9 @@ img{
   @keyframes mymove3 {
     50% {transform: translate(10px,0px);}
   }
+  @keyframes mymove4 {
+    100% {transform: translate(700px,0px);}
+  }
 
   .contentDiv{
     background: whitesmoke;
@@ -88,18 +91,9 @@ img{
     flex-direction: row;
     color: #6C4A4A;
   }
+.rock{
+  width: 40px;
+  animation: mymove4 10s infinite;
 
-.tabDiv{
-  height: 40px;
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
 }
-.tabDiv>div{
-  border: 1px solid red;
-  min-width: 100px;
-  background: lightgray;
-  margin-top: .1%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
+
