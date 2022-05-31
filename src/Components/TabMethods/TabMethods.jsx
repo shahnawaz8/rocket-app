@@ -16,13 +16,13 @@ export const TabMethods = () =>{
                     <POST name={'post'}/>
                 </Tab>
                 <Tab eventKey="PATCH" title="PATCH">
-                    <h1>PATCH</h1>
+                <POST name={'patch'}/>
                 </Tab>
                 <Tab eventKey="DELETE" title="DELETE">
-                    <h1>DELETE</h1>
+                <POST name={'delete'}/>
                 </Tab>
                 <Tab eventKey="PUT" title="PUT">
-                    <h1>PUT</h1>
+                <POST name={'put'}/>
                 </Tab>
             </Tabs>
         </div>

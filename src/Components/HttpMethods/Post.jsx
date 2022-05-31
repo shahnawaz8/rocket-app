@@ -23,8 +23,48 @@ export const POST = ({name}) => {
             }
 
         }
+        else if(name=='delete'){
+            try {
+                axios.delete(`${urlIn}`)
+                .then((res)=>{
+                    setTg(true)
+                    swal("Data Deleted successfully");
+                })
+                .catch((err)=>swal(err.message));
+                
+            } catch (error) {
+                swal(error.message);
+            }
+        }
+        else if(name=='patch'){
+            try {
+                axios.patch(`${urlIn}`,JSON.parse((text.trim())))
+                .then((res)=>{
+                    setTg(true)
+                    swal("Data Updated successfully");
+                })
+                .catch((err)=>swal(err.message));
+                
+            } catch (error) {
+                swal(error.message);
+            }
+        }
+        else if(name=='put'){
+            try {
+                axios.put(`${urlIn}`,JSON.parse((text.trim())))
+                .then((res)=>{
+                    setTg(true)
+                    swal("Data Updated successfully");
+                })
+                .catch((err)=>swal(err.message));
+                
+            } catch (error) {
+                swal(error.message);
+            }
+        }
+        
     }
-    console.log(text);
+    // console.log(text);
     return (
         <>
         <div className="getContainer">
@@ -36,7 +76,7 @@ export const POST = ({name}) => {
                 <input type="text" onChange={(e)=>setUrlIn(e.target.value)} className='getRealIntput' placeholder='Enter url'/>
                 <button className='getbtn' onClick={handleEvent}>Send</button>
             </div>
-            <textarea placeholder='Enter data in json formate' onChange={(e)=>setText(e.target.value)}
+            <textarea disabled={name=='delete'} placeholder='Enter data in json formate' onChange={(e)=>setText(e.target.value)}
              className='getResponse'></textarea>
                 
             
